@@ -38,6 +38,7 @@ if '%errorlevel%' NEQ '0' (
 :--------------------------------------  
 
 
+echo Current PC Name=%computername%
 echo What would you like to rename this computer to?
 set /p NewCompName=
 wmic computersystem where name="%computername%" call rename name="%NewCompName%"
